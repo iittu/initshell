@@ -6,7 +6,7 @@
 #
 # Copyright (C) 2019-2021 iittu
 #
-# 
+# Url: https://raw.githubusercontent.com/iittu/initshell/master/vpscfg.sh
 #
 
 red='\033[0;31m'
