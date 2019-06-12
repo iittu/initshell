@@ -42,6 +42,7 @@ fi
 #################################################
 
 common_init(){
+        yum -y install vim
 	yum -y install net-tools
 	
 	yum -y install epel-release
