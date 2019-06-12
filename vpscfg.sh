@@ -50,7 +50,8 @@ common_init(){
 	pip install youtube-dl
 	
 	yum -y install httpd
-	service httpd start
+	systemctl start httpd
+	systemctl enable httpd
 	touch /var/www/html/index.html
 	echo "<br>This is a test page of IITTU!<br>" > /var/www/html/index.html
 	
