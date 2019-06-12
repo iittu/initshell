@@ -508,7 +508,7 @@ echo " Arch    : $arch ($lbit Bit)"
 echo " Kernel  : $kern"
 echo "----------------------------------------"
 echo " Auto install latest kernel for TCP BBR"
-echo
+echo "    ONLY CAN BE USED ON CENTOS 6+ !!!   "
 echo "                 IITTU"
 echo "----------------------------------------"
 echo
