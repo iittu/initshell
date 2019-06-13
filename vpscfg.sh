@@ -502,7 +502,6 @@ install_bbr() {
     reboot_os
 }
 
-
 clear
 echo "---------- System Information ----------"
 echo " OS      : $opsy"
@@ -510,12 +509,25 @@ echo " Arch    : $arch ($lbit Bit)"
 echo " Kernel  : $kern"
 echo "----------------------------------------"
 echo " Auto install latest kernel for TCP BBR"
-echo "    ONLY CAN BE USED ON CENTOS 6+ !!!   "
+echo 
 echo "                 IITTU"
 echo "----------------------------------------"
 echo
-echo "Press any key to start...or Press Ctrl+C to cancel. VPS will be reboot after this!!!"
-char=`get_char`
+echo "VPS will be reboot after this!!!"
+#char=`get_char`
+    seconds_left=3
+    echo
+    echo -e "Press Ctrl+C to cancel in 3 seconds: \c"
+    tput sc
+    while [ $seconds_left -gt 0 ];do
+      echo -n -e "$seconds_left\c"
+        tput rc
+      sleep 1
+      seconds_left=$(($seconds_left - 1))
+    done
+        clear
+        echo "Prepare to take off !!!"
+	sleep 2
 
 common_init
 install_v2ray 2>&1 | tee ${cur_dir}/install_v2ray.log
