@@ -133,11 +133,11 @@ install_v2ray(){
       "streamSettings": {
         "network": "mkcp", 
         "kcpSettings": {
-          "uplinkCapacity": 12,
+          "uplinkCapacity": 100,
           "downlinkCapacity": 100,
           "congestion": false,
           "header": {
-            "type": "srtp"
+            "type": "wireguard"
           }
         }
       }
@@ -163,7 +163,7 @@ Protocol: vmess
 UUID: $uuid
 Network: mkcp
 AlterID: 64
-Type: srtp
+Type: wireguard
 " > device.cfg
 
 }
