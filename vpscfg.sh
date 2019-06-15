@@ -53,7 +53,7 @@ common_init(){
 	systemctl start httpd
 	systemctl enable httpd
 	touch /var/www/html/index.html
-	echo "
+	echo '
 	<title>社会主义核心价值观</title>
 <br>
 <h>
@@ -64,7 +64,7 @@ common_init(){
 <br>
 </h>
 <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1560591105284&di=9624a97b20ab99c6927d1319a7249b1c&imgtype=0&src=http%3A%2F%2Fwww.xcvec.com%2F__local%2F1%2FA7%2FFE%2F22F35FEBD845FF99F2E1E58D697_30CDF865_1589B.jpg"  alt="shzyhxjzg" />
-	" > /var/www/html/index.html
+	' > /var/www/html/index.html
 	
 }
 
